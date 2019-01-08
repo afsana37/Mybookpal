@@ -1,0 +1,282 @@
+<style>
+header {
+    background-color:#43bfc7
+    text-align:center;
+    padding:10px;	 
+}
+nav {
+    line-height:30px;
+    background-color:white;
+    height:450px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+
+nav2 {
+    line-height:40px;
+    background-color:#43bfc7;
+    height:600px;
+    width:200px;
+    float:right;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #43bfc7;
+}
+ul2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #43bfc7;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #342D7E;
+   color:white
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #342d7e;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1569c7;
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 40px;
+}
+
+
+li2 a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li2 a:hover {
+    background-color: #342d7e;
+    color: white;
+}
+
+div.img {
+    border: 1px solid #FFFFFF;
+}
+
+div.img:hover {
+    border: 1px solid #FFFFFF;
+}
+
+div.img img {
+    width: 190px;
+    height: 250px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 21%;
+}
+
+@media only screen and (max-width: 400px){
+    .responsive {
+        width: 100px;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100px
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+input[type=text] {
+     clear:left
+   width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+footer {
+    padding: 1em;
+    color:#342d7e;
+    background-color:#43bfc7;
+    clear: left;
+    text-align: center;
+	}
+	
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 900px;
+    height: 300px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}	
+
+div.cities {
+    background-color:#9e7bff;
+    color:black;
+    margin: 30px 0 30px 0;
+    padding: 30px;
+}
+
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #342d7e;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #43bfc7;}
+
+
+.btn-group button {
+    background-color: #43bfc7; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #babaff;
+}
+
+
+#myDIV {
+    width:1300px;
+    height:500px;
+    background: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color:#c39bd3;}
+    to {background-color:#43bfc7;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color:#c39bd3;}
+    to {background-color:#43bfc7;}
+
+</style>
